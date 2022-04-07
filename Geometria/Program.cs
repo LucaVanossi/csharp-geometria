@@ -6,6 +6,7 @@ namespace Geometria
     {
         static void Main (string[] args)
         {
+            //Rettangolo 1
             Rettangolo Rettangolo1 = new Rettangolo();
 
             Console.WriteLine("Inserisci l'altezza del rettangolo ");
@@ -15,6 +16,12 @@ namespace Geometria
 
             Rettangolo1.calcolaArea();
             Rettangolo1.calcolaPerimetro();
+
+            //Rettangolo 2
+            Rettangolo Rettangolo2 = new Rettangolo();
+            Rettangolo2.altezzaRettangolo = 10;
+            Rettangolo2.baseRettangolo = 15;
+            Rettangolo2.StampaRettangolo();
 
             //Console.ReadKey();
         }

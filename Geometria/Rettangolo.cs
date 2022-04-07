@@ -11,15 +11,24 @@ namespace Geometria
         
         public int baseRettangolo;
         public int altezzaRettangolo;
-
+   
         public void calcolaArea()
         {
-            Console.WriteLine(baseRettangolo * altezzaRettangolo);
+            Console.WriteLine("L'area del rettangolo è: " + (baseRettangolo * altezzaRettangolo));
         }
 
         public void calcolaPerimetro()
         {
-            Console.WriteLine((baseRettangolo + altezzaRettangolo) * 2);
+            Console.WriteLine("Il perimetro del rettangolo è: " + ((baseRettangolo + altezzaRettangolo) * 2));
+        }
+
+        public void StampaRettangolo ()
+        {
+            Console.WriteLine("--Rettangolo1--");
+            Console.WriteLine("base: " + baseRettangolo + " cm");
+            Console.WriteLine("altezza: " + altezzaRettangolo + " cm");
+            Console.WriteLine("Perimetro: " + ((baseRettangolo + altezzaRettangolo) * 2) + " cm");
+            Console.WriteLine("Area: " + (baseRettangolo * altezzaRettangolo) + " cm2");
         }
     }
 }
